@@ -2,7 +2,7 @@ import {useState} from 'react'
 import './styles.css'
 
 function Square({value, onSquareClick, isWinning}) {
-  console.log('Render Square:', value, 'Clickable?', typeof onSquareClick === 'function')
+  // console.log('Render Square:', value, 'Clickable?', typeof onSquareClick === 'function')
   return (
     <button
       className={`square ${isWinning ? 'winner-square' : ''}`}
@@ -18,7 +18,7 @@ function Board({xIsNext, squares, onPlay, N, M}) {
       return
     }
 
-    console.log('Clicked', idx)
+    // console.log('Clicked', idx)
 
     const nextSquares = squares.slice()
     if (xIsNext === true) {
